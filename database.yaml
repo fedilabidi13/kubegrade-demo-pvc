@@ -4,7 +4,7 @@ metadata:
   name: mysql-pvc
   namespace: app
 spec:
-  storageClassName: gp2  # WRONG - doesn't exist, only local-path exists
+  storageClassName: local-path  # Fixed: Changed from 'gp2' to 'local-path' (available StorageClass)
   accessModes:
   - ReadWriteOnce
   resources:
