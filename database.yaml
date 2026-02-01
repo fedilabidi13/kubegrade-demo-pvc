@@ -4,7 +4,7 @@ metadata:
   name: mysql-pvc
   namespace: app
 spec:
-  storageClassName: local-path  # Fixed: Changed from 'gp2' to 'local-path' (available StorageClass)
+  storageClassName: test
   accessModes:
   - ReadWriteOnce
   resources:
